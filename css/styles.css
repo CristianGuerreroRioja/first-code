@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Comic Neue', cursive;
-    font-size: 20px;
 }
 
 body {
@@ -12,9 +11,12 @@ body {
 /* Style the header */
 
 .header {
-    background-color: #ff0000;
-    padding: 20px;
+    background-image: url('../img/imagen-encabezado.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
     text-align: center;
+    color: cornsilk;
 }
 
 .header h1 {
@@ -25,22 +27,26 @@ body {
     font-size: 40px;
 }
 
-.column h2 {
-    color: green;
-    text-align: center;
-}
-
 
 /* Create three equal columns that floats next to each other */
 
 
 /* Ejemplo de estilos por clase */
 
-.column {
+.one-column {
     float: left;
     width: 100%;
     /*  padding: 0 20% 0% 20%;*/
     padding: 20px 20%;
+}
+
+.one-column h1,
+.one-column h2 {
+    text-align: center;
+}
+
+#cadetblue {
+    background-color: cadetblue;
 }
 
 
@@ -52,21 +58,27 @@ body {
     clear: both;
 }
 
+.two-column {
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
 
-/*Image Gallery*/
 
-.gallery {
+/*Three columns gallery*/
+
+.three-column {
     padding: 20px;
     float: left;
     width: 33.33%;
 }
 
-.gallery img {
+.three-column img {
     width: 100%;
 }
 
-.gallery .desc {
-    padding: 15px;
+.three-column .desc {
+    padding: 10px;
     text-align: center;
 }
 
